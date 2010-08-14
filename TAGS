@@ -1,0 +1,167 @@
+
+wimax_lkm.c,5029
+#define DPRINTF(DPRINTF37,659
+#define DPRINTFN(DPRINTFN38,720
+int ehcidebug = 0;ehcidebug39,790
+#define bitmask_snprintf(bitmask_snprintf41,828
+#define DPRINTF(DPRINTF44,910
+#define DPRINTFN(DPRINTFN45,929
+USB_DECLARE_DRIVER(wimax);wimax49,996
+struct wimax_softc *dev;dev51,1024
+static int usbdevloc[] = { -1, -1, -1, -1, -1, -1 }; usbdevloc64,1461
+static struct cfparent uhubparent = {uhubparent66,1516
+static struct cfdata wimax_cfdata[] = {wimax_cfdata70,1590
+static struct cfdriver *wimax_cfdrivers[] = {wimax_cfdrivers75,1705
+static struct cfattach *wimax_cfattachs[] = {wimax_cfattachs79,1772
+static const struct cfattachlkminit wimax_cfattachinit[] = {wimax_cfattachinit84,1840
+static struct wimax_type wimax_devs[] = {wimax_devs89,1946
+static void fill_C_req(unsigned char *buf, int len)fill_C_req98,2155
+static int fill_normal_C_req(unsigned char *buf, unsigned short type_a, unsigned short type_b, unsigned short param_len, unsigned char *param)fill_normal_C_req108,2343
+int fill_string_info_req(unsigned char *buf)fill_string_info_req126,2839
+int fill_init1_req(unsigned char *buf)fill_init1_req130,2942
+int fill_mac_req(unsigned char *buf)fill_mac_req136,3094
+int fill_init2_req(unsigned char *buf)fill_init2_req141,3190
+int fill_init3_req(unsigned char *buf)fill_init3_req146,3289
+int fill_authorization_data_req(unsigned char *buf)fill_authorization_data_req150,3387
+int fill_outgoing_packet_header(unsigned char *buf, int len, int body_len)fill_outgoing_packet_header156,3621
+inline void fill_config_req(unsigned char *buf, int body_len)fill_config_req165,3828
+static int fill_normal_config_req(unsigned char *buf, unsigned short type_a, unsigned short type_b, unsigned short param_len, unsigned char *param) {fill_normal_config_req171,3983
+int fill_init_cmd(unsigned char *buf)fill_init_cmd189,4544
+int fill_diode_control_cmd(unsigned char *buf, int turn_on)fill_diode_control_cmd204,4787
+int fill_protocol_info_req(unsigned char *buf, int len, unsigned char flags)fill_protocol_info_req211,4979
+int fill_mac_lowlevel_req(unsigned char *buf)fill_mac_lowlevel_req224,5225
+int fill_find_network_req(unsigned char *buf, unsigned short level)fill_find_network_req234,5455
+int fill_state_req(unsigned char *buf)fill_state_req239,5650
+int fill_connection_params2_req(unsigned char *buf)fill_connection_params2_req243,5747
+int update_network(struct wimax_softc* sc)update_network249,5913
+Static int process_normal_C_response(struct wimax_softc *dev, const unsigned char *buf, size_t len)process_normal_C_response286,6611
+Static int process_debug_C_response(struct wimax_softc *dev, const unsigned char *buf, size_t len)process_debug_C_response405,10396
+static int process_C_response(struct wimax_softc *dev, const unsigned char *buf, size_t len)process_C_response411,10564
+static int process_D_response(struct wimax_softc *dev, const unsigned char *buf, size_t len)process_D_response437,11127
+static int process_E_response(struct wimax_softc *dev, const unsigned char *buf, int len)process_E_response464,11716
+static int process_P_response(struct wimax_softc *dev, const unsigned char *buf, int len)process_P_response470,11880
+USB_MATCH(wimax)USB_MATCH480,12050
+wimax_usb_read(struct wimax_softc *sc, u_int16_t length, u_int8_t *data)wimax_usb_read506,12519
+wimax_usb_sync_write(struct wimax_softc *sc, u_int16_t length, u_int8_t *data)wimax_usb_sync_write533,13074
+wimax_usb_write(struct wimax_softc *sc, u_int16_t length, u_int8_t *data)wimax_usb_write559,13614
+void wimax_read_callback(usbd_xfer_handle xh, usbd_private_handle priv, usbd_status stat)wimax_read_callback584,14122
+wimax_async_read(struct wimax_softc *sc)wimax_async_read625,14938
+void wimax_start(struct ifnet *ifp)wimax_start646,15440
+int wimax_init(struct ifnet *ifp)wimax_init653,15542
+void wimax_stop(struct ifnet *ifp, int a) wimax_stop660,15640
+void wimax_watchdog(struct ifnet *ifp)wimax_watchdog667,15747
+int wimax_ioctl(struct ifnet *ifp, u_long command, void *data)wimax_ioctl674,15858
+Static int wimax_miibus_readreg(device_ptr_t dev, int phy, int reg) wimax_miibus_readreg731,17531
+Static void wimax_miibus_writereg(device_ptr_t dev, int phy, int reg, int data)wimax_miibus_writereg737,17617
+Static void wimax_miibus_statchg(device_ptr_t dev)wimax_miibus_statchg742,17703
+Static void wimax_lock_mii(struct wimax_softc *sc)wimax_lock_mii747,17760
+Static void wimax_unlock_mii(struct wimax_softc *sc)wimax_unlock_mii753,17872
+wimax_ifmedia_upd(struct ifnet *ifp)wimax_ifmedia_upd765,18078
+Static void wimax_tick(void *xsc)wimax_tick785,18415
+Static void wimax_tick_task(void *xsc)wimax_tick_task791,18559
+void wimax_init_device(struct wimax_softc *sc)wimax_init_device799,18736
+USB_ATTACH(wimax)USB_ATTACH958,22308
+USB_DETACH(wimax)USB_DETACH1090,26246
+int wimax_activate(device_ptr_t self, enum devact act)wimax_activate1108,26831
+wimax_lkmentry(struct lkm_table *lkmtp, int cmd, int ver)wimax_lkmentry1116,26941
+
+wmax_lkm.c,784
+USB_DECLARE_DRIVER(wimax);wimax16,317
+static int usbdevloc[] = { -1, -1, -1, -1, -1, -1 }; usbdevloc22,478
+static struct cfparent uhubparent = {uhubparent25,534
+static struct cfdata wimax_cfdata[] = {wimax_cfdata29,616
+static struct cfdriver *wimax_cfdrivers[] = {wimax_cfdrivers34,741
+static struct cfattach *wimax_cfattachs[] = {wimax_cfattachs38,818
+static const struct cfattachlkminit wimax_cfattachinit[] = {wimax_cfattachinit43,896
+static struct wimax_type wimax_devs[] = {wimax_devs48,1012
+USB_MATCH(wimax)USB_MATCH56,1220
+USB_ATTACH(wimax)USB_ATTACH78,1646
+USB_DETACH(wimax)USB_DETACH112,2436
+int wimax_activate(device_ptr_t self, enum devact act)wimax_activate119,2503
+wimax_lkmentry(struct lkm_table *lkmtp, int cmd, int ver)wimax_lkmentry127,2613
+
+wimax.h,4196
+#define WIMAX_ENDPT_RX WIMAX_ENDPT_RX5,18
+#define WIMAX_ENDPT_TX WIMAX_ENDPT_TX6,52
+#define WIMAX_ENDPT_MAX WIMAX_ENDPT_MAX7,86
+#define MAC_LEN MAC_LEN9,113
+struct wimax_softc {wimax_softc11,158
+	USBBASEDEVICE wimax_dev;wimax_dev12,179
+	#define WIMAX_S_OK WIMAX_S_OK13,205
+	#define WIMAX_S_UNCONFIG WIMAX_S_UNCONFIG14,235
+	#define MAC_OFFSET	MAC_OFFSET15,268
+	struct ethercom sc_ec;sc_ec17,320
+	struct mii_data wimax_mii;wimax_mii18,344
+	char sc_state;sc_state20,373
+	usbd_device_handle  wimax_udev;wimax_udev21,389
+	usbd_interface_handle   wimax_iface;wimax_iface22,422
+	int wimax_unit;wimax_unit23,460
+	kmutex_t wimax_mii_lock; //TODOwimax_mii_lock25,478
+	u_int8_t        wimax_link;wimax_link26,511
+	int wimax_refcnt;wimax_refcnt28,541
+	struct lwp      *wimax_thread;wimax_thread30,561
+	int         wimax_closing;wimax_closing31,593
+	kcondvar_t      wimax_domc;wimax_domc32,621
+	kcondvar_t      wimax_closemc;wimax_closemc33,650
+	kmutex_t        wimax_mcmtx;wimax_mcmtx34,682
+	usb_callout_t wimax_stat_ch;wimax_stat_ch36,713
+	char net_found;net_found38,744
+	struct usb_task wimax_tick_task;wimax_tick_task40,762
+	int wimax_ed[WIMAX_ENDPT_MAX];wimax_ed41,796
+	usbd_pipe_handle rx_pipe, tx_pipe;rx_pipe42,828
+	usbd_pipe_handle rx_pipe, tx_pipe;tx_pipe42,828
+	unsigned int bulk_in_len;bulk_in_len43,864
+	#define RECV_BUFLEN RECV_BUFLEN45,892
+	char recv_buff[RECV_BUFLEN];recv_buff46,918
+	unsigned int info_updated;info_updated48,949
+	unsigned char proto_flags;proto_flags49,977
+	char chip[0x40];chip50,1005
+	char firmware[0x40];firmware51,1023
+	unsigned char mac[6];mac52,1045
+	int link_status;link_status53,1068
+	short rssi;rssi54,1086
+	float cinr;cinr55,1099
+	unsigned char bsid[6];bsid56,1112
+	unsigned short txpwr;txpwr57,1136
+	unsigned int freq;freq58,1159
+	int state;state59,1179
+struct wimax_device_info {wimax_device_info62,1195
+	unsigned int info_updated;info_updated63,1222
+	unsigned char proto_flags;proto_flags64,1250
+	char chip[0x40];chip65,1278
+	char firmware[0x40];firmware66,1296
+	unsigned char mac[6];mac67,1318
+	int link_status;link_status68,1341
+	short rssi;rssi69,1359
+	float cinr;cinr70,1372
+	unsigned char bsid[6];bsid71,1385
+	unsigned short txpwr;txpwr72,1409
+	unsigned int freq;freq73,1432
+	int state;state74,1452
+struct wimax_type {wimax_type77,1468
+	u_int16_t       wimax_vid;wimax_vid78,1488
+	u_int16_t       wimax_pid;wimax_pid79,1516
+struct u200_buf_headu200_buf_head82,1548
+	unsigned char  head;head84,1571
+	unsigned char  type;type85,1593
+	unsigned short length;length86,1615
+char *wimax_states[] = {"INIT", "SYNC", "NEGO", "NORMAL", "SLEEP", "IDLE", "HHO", "FBSS", "RESET", "RESERVED", "UNDEFINED", "BE", "NRTPS", "RTPS", "ERTPS", "UGS", "INITIAL_RNG", "BASIC", "PRIMARY", "SECONDARY", "MULTICAST", "NORMAL_MULTICAST", "SLEEP_MULTICAST", "IDLE_MULTICAST", "FRAG_BROADCAST", "BROADCAST", "MANAGEMENT", "TRANSPORT"};wimax_states89,1643
+#define sc_if sc_if91,1984
+#define GET_IFP(GET_IFP92,2012
+#define GET_MII(GET_MII93,2056
+#define RPLY_HEADER(RPLY_HEADER95,2096
+#define WIMAX_CONFIG_NO WIMAX_CONFIG_NO97,2138
+#define WIMAX_IFACE_IDX WIMAX_IFACE_IDX98,2170
+#define USB_HOST_SUPPORT_EXTENDED_CMD	USB_HOST_SUPPORT_EXTENDED_CMD100,2203
+#define USB_HOST_SUPPORT_MULTIPLE_MAC_REQ	USB_HOST_SUPPORT_MULTIPLE_MAC_REQ101,2248
+#define USB_HOST_SUPPORT_SELECTIVE_SUSPEND	USB_HOST_SUPPORT_SELECTIVE_SUSPEND102,2296
+#define USB_HOST_SUPPORT_TRUNCATE_ETHERNET_HEADER	USB_HOST_SUPPORT_TRUNCATE_ETHERNET_HEADER103,2345
+#define USB_HOST_SUPPORT_DL_SIX_BYTES_HEADER	USB_HOST_SUPPORT_DL_SIX_BYTES_HEADER104,2400
+#define USB_HOST_SUPPORT_UL_SIX_BYTES_HEADER	USB_HOST_SUPPORT_UL_SIX_BYTES_HEADER105,2451
+#define USB_HOST_SUPPORT_DL_MULTI_PACKETS	USB_HOST_SUPPORT_DL_MULTI_PACKETS106,2502
+#define USB_HOST_SUPPORT_UL_MULTI_PACKETS	USB_HOST_SUPPORT_UL_MULTI_PACKETS107,2550
+#define MAX_PACKET_LEN	MAX_PACKET_LEN109,2599
+#define	MAXWIMAXDEVS	MAXWIMAXDEVS112,2671
+#define WIMAX_DEFAULT_MTU WIMAX_DEFAULT_MTU114,2695
+#define HEADER_LENGTH_LOWLEVEL HEADER_LENGTH_LOWLEVEL115,2726
+#define HEADER_LENGTH HEADER_LENGTH116,2760

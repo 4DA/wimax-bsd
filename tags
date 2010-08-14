@@ -1,0 +1,167 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DPRINTF	wimax_lkm.c	37;"	d	file:
+DPRINTF	wimax_lkm.c	44;"	d	file:
+DPRINTFN	wimax_lkm.c	38;"	d	file:
+DPRINTFN	wimax_lkm.c	45;"	d	file:
+GET_IFP	wimax.h	92;"	d
+GET_MII	wimax.h	93;"	d
+HEADER_LENGTH	wimax.h	116;"	d
+HEADER_LENGTH_LOWLEVEL	wimax.h	115;"	d
+MAC_LEN	wimax.h	9;"	d
+MAC_OFFSET	wimax.h	15;"	d
+MAXWIMAXDEVS	wimax.h	112;"	d
+MAX_PACKET_LEN	wimax.h	109;"	d
+RECV_BUFLEN	wimax.h	45;"	d
+RPLY_HEADER	wimax.h	95;"	d
+USB_ATTACH	wimax_lkm.c	/^USB_ATTACH(wimax)$/;"	f
+USB_ATTACH	wmax_lkm.c	/^USB_ATTACH(wimax)$/;"	f
+USB_DETACH	wimax_lkm.c	/^USB_DETACH(wimax)$/;"	f
+USB_DETACH	wmax_lkm.c	/^USB_DETACH(wimax)$/;"	f
+USB_HOST_SUPPORT_DL_MULTI_PACKETS	wimax.h	106;"	d
+USB_HOST_SUPPORT_DL_SIX_BYTES_HEADER	wimax.h	104;"	d
+USB_HOST_SUPPORT_EXTENDED_CMD	wimax.h	100;"	d
+USB_HOST_SUPPORT_MULTIPLE_MAC_REQ	wimax.h	101;"	d
+USB_HOST_SUPPORT_SELECTIVE_SUSPEND	wimax.h	102;"	d
+USB_HOST_SUPPORT_TRUNCATE_ETHERNET_HEADER	wimax.h	103;"	d
+USB_HOST_SUPPORT_UL_MULTI_PACKETS	wimax.h	107;"	d
+USB_HOST_SUPPORT_UL_SIX_BYTES_HEADER	wimax.h	105;"	d
+USB_MATCH	wimax_lkm.c	/^USB_MATCH(wimax)$/;"	f
+USB_MATCH	wmax_lkm.c	/^USB_MATCH(wimax)$/;"	f
+WIMAX_CONFIG_NO	wimax.h	97;"	d
+WIMAX_DEFAULT_MTU	wimax.h	114;"	d
+WIMAX_ENDPT_MAX	wimax.h	7;"	d
+WIMAX_ENDPT_RX	wimax.h	5;"	d
+WIMAX_ENDPT_TX	wimax.h	6;"	d
+WIMAX_IFACE_IDX	wimax.h	98;"	d
+WIMAX_S_OK	wimax.h	13;"	d
+WIMAX_S_UNCONFIG	wimax.h	14;"	d
+bitmask_snprintf	wimax_lkm.c	41;"	d	file:
+bsid	wimax.h	/^	unsigned char bsid[6];$/;"	m	struct:wimax_device_info
+bsid	wimax.h	/^	unsigned char bsid[6];$/;"	m	struct:wimax_softc
+bulk_in_len	wimax.h	/^	unsigned int bulk_in_len;$/;"	m	struct:wimax_softc
+chip	wimax.h	/^	char chip[0x40];$/;"	m	struct:wimax_device_info
+chip	wimax.h	/^	char chip[0x40];$/;"	m	struct:wimax_softc
+cinr	wimax.h	/^	float cinr;$/;"	m	struct:wimax_device_info
+cinr	wimax.h	/^	float cinr;$/;"	m	struct:wimax_softc
+dev	wimax_lkm.c	/^struct wimax_softc *dev;$/;"	v	typeref:struct:wimax_softc
+ehcidebug	wimax_lkm.c	/^int ehcidebug = 0;$/;"	v
+fill_C_req	wimax_lkm.c	/^static void fill_C_req(unsigned char *buf, int len)$/;"	f	file:
+fill_authorization_data_req	wimax_lkm.c	/^int fill_authorization_data_req(unsigned char *buf)$/;"	f
+fill_config_req	wimax_lkm.c	/^inline void fill_config_req(unsigned char *buf, int body_len)$/;"	f
+fill_connection_params2_req	wimax_lkm.c	/^int fill_connection_params2_req(unsigned char *buf)$/;"	f
+fill_diode_control_cmd	wimax_lkm.c	/^int fill_diode_control_cmd(unsigned char *buf, int turn_on)$/;"	f
+fill_find_network_req	wimax_lkm.c	/^int fill_find_network_req(unsigned char *buf, unsigned short level)$/;"	f
+fill_init1_req	wimax_lkm.c	/^int fill_init1_req(unsigned char *buf)$/;"	f
+fill_init2_req	wimax_lkm.c	/^int fill_init2_req(unsigned char *buf)$/;"	f
+fill_init3_req	wimax_lkm.c	/^int fill_init3_req(unsigned char *buf)$/;"	f
+fill_init_cmd	wimax_lkm.c	/^int fill_init_cmd(unsigned char *buf)$/;"	f
+fill_mac_lowlevel_req	wimax_lkm.c	/^int fill_mac_lowlevel_req(unsigned char *buf)$/;"	f
+fill_mac_req	wimax_lkm.c	/^int fill_mac_req(unsigned char *buf)$/;"	f
+fill_normal_C_req	wimax_lkm.c	/^static int fill_normal_C_req(unsigned char *buf, unsigned short type_a, unsigned short type_b, unsigned short param_len, unsigned char *param)$/;"	f	file:
+fill_normal_config_req	wimax_lkm.c	/^static int fill_normal_config_req(unsigned char *buf, unsigned short type_a, unsigned short type_b, unsigned short param_len, unsigned char *param) {$/;"	f	file:
+fill_outgoing_packet_header	wimax_lkm.c	/^int fill_outgoing_packet_header(unsigned char *buf, int len, int body_len)$/;"	f
+fill_protocol_info_req	wimax_lkm.c	/^int fill_protocol_info_req(unsigned char *buf, int len, unsigned char flags)$/;"	f
+fill_state_req	wimax_lkm.c	/^int fill_state_req(unsigned char *buf)$/;"	f
+fill_string_info_req	wimax_lkm.c	/^int fill_string_info_req(unsigned char *buf)$/;"	f
+firmware	wimax.h	/^	char firmware[0x40];$/;"	m	struct:wimax_device_info
+firmware	wimax.h	/^	char firmware[0x40];$/;"	m	struct:wimax_softc
+freq	wimax.h	/^	unsigned int freq;$/;"	m	struct:wimax_device_info
+freq	wimax.h	/^	unsigned int freq;$/;"	m	struct:wimax_softc
+head	wimax.h	/^	unsigned char  head;$/;"	m	struct:u200_buf_head
+info_updated	wimax.h	/^	unsigned int info_updated;$/;"	m	struct:wimax_device_info
+info_updated	wimax.h	/^	unsigned int info_updated;$/;"	m	struct:wimax_softc
+length	wimax.h	/^	unsigned short length;$/;"	m	struct:u200_buf_head
+link_status	wimax.h	/^	int link_status;$/;"	m	struct:wimax_device_info
+link_status	wimax.h	/^	int link_status;$/;"	m	struct:wimax_softc
+mac	wimax.h	/^	unsigned char mac[6];$/;"	m	struct:wimax_device_info
+mac	wimax.h	/^	unsigned char mac[6];$/;"	m	struct:wimax_softc
+net_found	wimax.h	/^	char net_found;$/;"	m	struct:wimax_softc
+process_C_response	wimax_lkm.c	/^static int process_C_response(struct wimax_softc *dev, const unsigned char *buf, size_t len)$/;"	f	file:
+process_D_response	wimax_lkm.c	/^static int process_D_response(struct wimax_softc *dev, const unsigned char *buf, size_t len)$/;"	f	file:
+process_E_response	wimax_lkm.c	/^static int process_E_response(struct wimax_softc *dev, const unsigned char *buf, int len)$/;"	f	file:
+process_P_response	wimax_lkm.c	/^static int process_P_response(struct wimax_softc *dev, const unsigned char *buf, int len)$/;"	f	file:
+process_debug_C_response	wimax_lkm.c	/^Static int process_debug_C_response(struct wimax_softc *dev, const unsigned char *buf, size_t len)$/;"	f
+process_normal_C_response	wimax_lkm.c	/^Static int process_normal_C_response(struct wimax_softc *dev, const unsigned char *buf, size_t len)$/;"	f
+proto_flags	wimax.h	/^	unsigned char proto_flags;$/;"	m	struct:wimax_device_info
+proto_flags	wimax.h	/^	unsigned char proto_flags;$/;"	m	struct:wimax_softc
+recv_buff	wimax.h	/^	char recv_buff[RECV_BUFLEN];$/;"	m	struct:wimax_softc
+rssi	wimax.h	/^	short rssi;$/;"	m	struct:wimax_device_info
+rssi	wimax.h	/^	short rssi;$/;"	m	struct:wimax_softc
+rx_pipe	wimax.h	/^	usbd_pipe_handle rx_pipe, tx_pipe;$/;"	m	struct:wimax_softc
+sc_ec	wimax.h	/^	struct ethercom sc_ec;$/;"	m	struct:wimax_softc	typeref:struct:wimax_softc::ethercom
+sc_if	wimax.h	91;"	d
+sc_state	wimax.h	/^	char sc_state;$/;"	m	struct:wimax_softc
+state	wimax.h	/^	int state;$/;"	m	struct:wimax_device_info
+state	wimax.h	/^	int state;$/;"	m	struct:wimax_softc
+tx_pipe	wimax.h	/^	usbd_pipe_handle rx_pipe, tx_pipe;$/;"	m	struct:wimax_softc
+txpwr	wimax.h	/^	unsigned short txpwr;$/;"	m	struct:wimax_device_info
+txpwr	wimax.h	/^	unsigned short txpwr;$/;"	m	struct:wimax_softc
+type	wimax.h	/^	unsigned char  type;$/;"	m	struct:u200_buf_head
+u200_buf_head	wimax.h	/^struct u200_buf_head$/;"	s
+uhubparent	wimax_lkm.c	/^static struct cfparent uhubparent = {$/;"	v	typeref:struct:cfparent	file:
+uhubparent	wmax_lkm.c	/^static struct cfparent uhubparent = {$/;"	v	typeref:struct:cfparent	file:
+update_network	wimax_lkm.c	/^int update_network(struct wimax_softc* sc)$/;"	f
+usbdevloc	wimax_lkm.c	/^static int usbdevloc[] = { -1, -1, -1, -1, -1, -1 }; $/;"	v	file:
+usbdevloc	wmax_lkm.c	/^static int usbdevloc[] = { -1, -1, -1, -1, -1, -1 }; $/;"	v	file:
+wimax	wimax_lkm.c	/^USB_DECLARE_DRIVER(wimax);$/;"	v
+wimax	wmax_lkm.c	/^USB_DECLARE_DRIVER(wimax);$/;"	v
+wimax_activate	wimax_lkm.c	/^int wimax_activate(device_ptr_t self, enum devact act)$/;"	f
+wimax_activate	wmax_lkm.c	/^int wimax_activate(device_ptr_t self, enum devact act)$/;"	f
+wimax_async_read	wimax_lkm.c	/^wimax_async_read(struct wimax_softc *sc)$/;"	f
+wimax_cfattachinit	wimax_lkm.c	/^static const struct cfattachlkminit wimax_cfattachinit[] = {$/;"	v	typeref:struct:cfattachlkminit	file:
+wimax_cfattachinit	wmax_lkm.c	/^static const struct cfattachlkminit wimax_cfattachinit[] = {$/;"	v	typeref:struct:cfattachlkminit	file:
+wimax_cfattachs	wimax_lkm.c	/^static struct cfattach *wimax_cfattachs[] = {$/;"	v	typeref:struct:cfattach	file:
+wimax_cfattachs	wmax_lkm.c	/^static struct cfattach *wimax_cfattachs[] = {$/;"	v	typeref:struct:cfattach	file:
+wimax_cfdata	wimax_lkm.c	/^static struct cfdata wimax_cfdata[] = {$/;"	v	typeref:struct:cfdata	file:
+wimax_cfdata	wmax_lkm.c	/^static struct cfdata wimax_cfdata[] = {$/;"	v	typeref:struct:cfdata	file:
+wimax_cfdrivers	wimax_lkm.c	/^static struct cfdriver *wimax_cfdrivers[] = {$/;"	v	typeref:struct:cfdriver	file:
+wimax_cfdrivers	wmax_lkm.c	/^static struct cfdriver *wimax_cfdrivers[] = {$/;"	v	typeref:struct:cfdriver	file:
+wimax_closemc	wimax.h	/^	kcondvar_t      wimax_closemc;$/;"	m	struct:wimax_softc
+wimax_closing	wimax.h	/^	int         wimax_closing;$/;"	m	struct:wimax_softc
+wimax_dev	wimax.h	/^	USBBASEDEVICE wimax_dev;$/;"	m	struct:wimax_softc
+wimax_device_info	wimax.h	/^struct wimax_device_info {$/;"	s
+wimax_devs	wimax_lkm.c	/^static struct wimax_type wimax_devs[] = {$/;"	v	typeref:struct:wimax_type	file:
+wimax_devs	wmax_lkm.c	/^static struct wimax_type wimax_devs[] = {$/;"	v	typeref:struct:wimax_type	file:
+wimax_domc	wimax.h	/^	kcondvar_t      wimax_domc;$/;"	m	struct:wimax_softc
+wimax_ed	wimax.h	/^	int wimax_ed[WIMAX_ENDPT_MAX];$/;"	m	struct:wimax_softc
+wimax_iface	wimax.h	/^	usbd_interface_handle   wimax_iface;$/;"	m	struct:wimax_softc
+wimax_ifmedia_upd	wimax_lkm.c	/^wimax_ifmedia_upd(struct ifnet *ifp)$/;"	f
+wimax_init	wimax_lkm.c	/^int wimax_init(struct ifnet *ifp)$/;"	f
+wimax_init_device	wimax_lkm.c	/^void wimax_init_device(struct wimax_softc *sc)$/;"	f
+wimax_ioctl	wimax_lkm.c	/^int wimax_ioctl(struct ifnet *ifp, u_long command, void *data)$/;"	f
+wimax_link	wimax.h	/^	u_int8_t        wimax_link;$/;"	m	struct:wimax_softc
+wimax_lkmentry	wimax_lkm.c	/^wimax_lkmentry(struct lkm_table *lkmtp, int cmd, int ver)$/;"	f
+wimax_lkmentry	wmax_lkm.c	/^wimax_lkmentry(struct lkm_table *lkmtp, int cmd, int ver)$/;"	f
+wimax_lock_mii	wimax_lkm.c	/^Static void wimax_lock_mii(struct wimax_softc *sc)$/;"	f
+wimax_mcmtx	wimax.h	/^	kmutex_t        wimax_mcmtx;$/;"	m	struct:wimax_softc
+wimax_mii	wimax.h	/^	struct mii_data wimax_mii;$/;"	m	struct:wimax_softc	typeref:struct:wimax_softc::mii_data
+wimax_mii_lock	wimax.h	/^	kmutex_t wimax_mii_lock; \/\/TODO$/;"	m	struct:wimax_softc
+wimax_miibus_readreg	wimax_lkm.c	/^Static int wimax_miibus_readreg(device_ptr_t dev, int phy, int reg) $/;"	f
+wimax_miibus_statchg	wimax_lkm.c	/^Static void wimax_miibus_statchg(device_ptr_t dev)$/;"	f
+wimax_miibus_writereg	wimax_lkm.c	/^Static void wimax_miibus_writereg(device_ptr_t dev, int phy, int reg, int data)$/;"	f
+wimax_pid	wimax.h	/^	u_int16_t       wimax_pid;$/;"	m	struct:wimax_type
+wimax_read_callback	wimax_lkm.c	/^void wimax_read_callback(usbd_xfer_handle xh, usbd_private_handle priv, usbd_status stat)$/;"	f
+wimax_refcnt	wimax.h	/^	int wimax_refcnt;$/;"	m	struct:wimax_softc
+wimax_softc	wimax.h	/^struct wimax_softc {$/;"	s
+wimax_start	wimax_lkm.c	/^void wimax_start(struct ifnet *ifp)$/;"	f
+wimax_stat_ch	wimax.h	/^	usb_callout_t wimax_stat_ch;$/;"	m	struct:wimax_softc
+wimax_states	wimax.h	/^char *wimax_states[] = {"INIT", "SYNC", "NEGO", "NORMAL", "SLEEP", "IDLE", "HHO", "FBSS", "RESET", "RESERVED", "UNDEFINED", "BE", "NRTPS", "RTPS", "ERTPS", "UGS", "INITIAL_RNG", "BASIC", "PRIMARY", "SECONDARY", "MULTICAST", "NORMAL_MULTICAST", "SLEEP_MULTICAST", "IDLE_MULTICAST", "FRAG_BROADCAST", "BROADCAST", "MANAGEMENT", "TRANSPORT"};$/;"	v
+wimax_stop	wimax_lkm.c	/^void wimax_stop(struct ifnet *ifp, int a) $/;"	f
+wimax_thread	wimax.h	/^	struct lwp      *wimax_thread;$/;"	m	struct:wimax_softc	typeref:struct:wimax_softc::lwp
+wimax_tick	wimax_lkm.c	/^Static void wimax_tick(void *xsc)$/;"	f
+wimax_tick_task	wimax.h	/^	struct usb_task wimax_tick_task;$/;"	m	struct:wimax_softc	typeref:struct:wimax_softc::usb_task
+wimax_tick_task	wimax_lkm.c	/^Static void wimax_tick_task(void *xsc)$/;"	f
+wimax_type	wimax.h	/^struct wimax_type {$/;"	s
+wimax_udev	wimax.h	/^	usbd_device_handle  wimax_udev;$/;"	m	struct:wimax_softc
+wimax_unit	wimax.h	/^	int wimax_unit;$/;"	m	struct:wimax_softc
+wimax_unlock_mii	wimax_lkm.c	/^Static void wimax_unlock_mii(struct wimax_softc *sc)$/;"	f
+wimax_usb_read	wimax_lkm.c	/^wimax_usb_read(struct wimax_softc *sc, u_int16_t length, u_int8_t *data)$/;"	f
+wimax_usb_sync_write	wimax_lkm.c	/^wimax_usb_sync_write(struct wimax_softc *sc, u_int16_t length, u_int8_t *data)$/;"	f
+wimax_usb_write	wimax_lkm.c	/^wimax_usb_write(struct wimax_softc *sc, u_int16_t length, u_int8_t *data)$/;"	f
+wimax_vid	wimax.h	/^	u_int16_t       wimax_vid;$/;"	m	struct:wimax_type
+wimax_watchdog	wimax_lkm.c	/^void wimax_watchdog(struct ifnet *ifp)$/;"	f
